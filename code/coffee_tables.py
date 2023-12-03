@@ -39,7 +39,7 @@ def scrape_crate_and_barrel(url):
 
             # Creating a CSV file in the 'csv' folder
             csv_folder = os.path.join('..', 'csv')
-            csv_file_path = os.path.join(csv_folder, 'TV Stands And Media Consoles.csv')  # Use os.path.join to create the correct file path
+            csv_file_path = os.path.join(csv_folder, 'Coffee Tables.csv')  # Use os.path.join to create the correct file path
 
             # Creating the 'csv' folder if it doesn't exist
             os.makedirs(csv_folder, exist_ok=True)  # Create the folder if it doesn't exist
@@ -81,7 +81,7 @@ def scrape_crate_and_barrel(url):
             print('Failed to retrieve the page. Status code:', response.status_code)
 
 # URL of the Crate and Barrel website
-crate_and_barrel_url = 'https://www.crateandbarrel.com/furniture/media-stands-consoles/'
+crate_and_barrel_url = 'https://www.crateandbarrel.com/furniture/coffee-tables/1'
 
 # Call the function to scrape and save the data
 scrape_crate_and_barrel(crate_and_barrel_url)
